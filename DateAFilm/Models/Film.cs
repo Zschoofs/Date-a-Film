@@ -21,11 +21,12 @@ namespace DateAFilm.Models
 
         // Genre of the film
         [StringLength(50)]
-        public string Genre { get; set; }
+        public List<string> Genre { get; set; }
 
-        // Director of the film
+        // Director(s) of the film
+        [Required]
         [StringLength(50)]
-        public string Director { get; set; }
+        public List<Producer> Producers { get; set; }
 
         // Description of the film
         [StringLength(500)]

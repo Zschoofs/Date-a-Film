@@ -11,8 +11,19 @@ namespace DateAFilm.Data {
         {
         }
 
-        // Ajouter DbSet pour chaque modèle
+        // Adding each model in the DB
         public DbSet<Film> Films { get; set; }
+        public DbSet<Producer> Producers { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configuring many-to-many relationship between Film and Producer
+            modelBuilder.Entity<Film>()
+                .HasMany(f => f.Producers)
+                .WithMany(p => p.Films);
+        }
     }
 
 }
