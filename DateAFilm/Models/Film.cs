@@ -20,17 +20,16 @@ namespace DateAFilm.Models
         public int Year { get; set; }
 
         // Genre of the film
-        [StringLength(50)]
-        public List<string> Genre { get; set; }
+        public ICollection<Genre> Genres { get; set; } = new List<Genre>();
 
         // Director(s) of the film
-        [Required]
-        [StringLength(50)]
-        public List<Producer> Producers { get; set; }
+        public ICollection<Producer> Producers { get; set; } = new List<Producer>();
 
         // Description of the film
         [StringLength(500)]
         public string Description { get; set; }
+
+        public string ImageUrl { get; set; }
 
         /* Ideas : date of watching, imbd notes, personal note, seen or not, */ 
     }

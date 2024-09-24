@@ -23,6 +23,6 @@ namespace DateAFilm.Models
         [StringLength(500)]
         public string Description { get; set; }
 
-        public List<Film> Films { get; set;}
+        public ICollection<Film> Films { get; set;} = new List<Film>();
     }
 }

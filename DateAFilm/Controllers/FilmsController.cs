@@ -46,6 +46,8 @@ namespace DateAFilm.Controllers
         // GET: Films/Create
         public IActionResult Create()
         {
+            // Pass the list of genres to the view
+            //ViewBag.Genres = new SelectList(_context.Genres, "Id", "Name");
             return View();
         }
 
@@ -62,6 +64,7 @@ namespace DateAFilm.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            //ViewBag.Genres = new SelectList(_context.Genres, "Id", "Name");
             return View(film);
         }
 
