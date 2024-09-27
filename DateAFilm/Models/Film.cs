@@ -26,10 +26,10 @@ namespace DateAFilm.Models
         public ICollection<Producer> Producers { get; set; } = new List<Producer>();
 
         // Description of the film
-        [StringLength(500)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
         /* Ideas : date of watching, imbd notes, personal note, seen or not, */ 
     }

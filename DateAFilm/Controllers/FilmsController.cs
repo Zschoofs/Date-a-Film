@@ -56,7 +56,7 @@ namespace DateAFilm.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Year,Genre,Director,Description")] Film film)
+        public async Task<IActionResult> Create([Bind("Id,Title,Year,Description, ImageUrl")] Film film)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace DateAFilm.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Year,Genre,Director,Description")] Film film)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Year,Description, ImageUrl")] Film film)
         {
             if (id != film.Id)
             {

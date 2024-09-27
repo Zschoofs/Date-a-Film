@@ -8034,19 +8034,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zoé\\.nuget\\packages\\": {}
+    "C:\\Users\\MlLe-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zoé\\Documents\\Github\\Date-a-Film\\DateAFilm\\DateAFilm.csproj",
+      "projectUniqueName": "C:\\Users\\MlLe-\\Documents\\GitHub\\Date-a-Film\\DateAFilm\\DateAFilm.csproj",
       "projectName": "DateAFilm",
-      "projectPath": "C:\\Users\\Zoé\\Documents\\Github\\Date-a-Film\\DateAFilm\\DateAFilm.csproj",
-      "packagesPath": "C:\\Users\\Zoé\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zoé\\Documents\\Github\\Date-a-Film\\DateAFilm\\obj\\",
+      "projectPath": "C:\\Users\\MlLe-\\Documents\\GitHub\\Date-a-Film\\DateAFilm\\DateAFilm.csproj",
+      "packagesPath": "C:\\Users\\MlLe-\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MlLe-\\Documents\\GitHub\\Date-a-Film\\DateAFilm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zoé\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MlLe-\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -8117,7 +8117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
